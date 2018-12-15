@@ -16,7 +16,7 @@ $("#subsignup").click(function( event ){
     var emailsecond=$('#emailsecond').val();
     console.log(phonenum);
     request = $.ajax({
-        url: "http://localhost:5000/signup",
+        url: "http://192.168.0.17:5000/signup",
         type: "post",
         data: {
             'user_id': user_id,
@@ -32,7 +32,8 @@ $("#subsignup").click(function( event ){
         // dataType: "json",
         // contentType: "application/json; charset=utf-8",
         success: function(response){
-            console.log(status);
+            console.log(response);
+            window.location.href = 'http://192.168.0.35:8080/signin.html';
         }
 
     });

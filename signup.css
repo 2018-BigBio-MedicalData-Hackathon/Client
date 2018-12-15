@@ -23,7 +23,7 @@ body{
     font-weight: 700;
     letter-spacing:8px;
 }
-img{
+div > img{
     border-radius: 50%;
     width:200px;
 }
