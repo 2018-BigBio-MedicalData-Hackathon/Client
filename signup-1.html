@@ -9,39 +9,85 @@
     <title>Medi-porket</title>
 </head>
 <body>
-    <nav class="navbar navbar-light" style="color:#f1f1f1;" >
-        <a class="navbar-brand" href="#" style="color: #7ED321; ">Meari</a>
-        <i class="fas fa-bars" style="color: #7ED321"></i>
-    </nav>
-    <div>
-        <p class="Greet">안녕하세요.</p> 
-        <p class="Greet-disc">소비자 맞춤형<br/>의료 처방전<br/> 메아리 입니다.</p>
-    </div>
-    <form class="Log-form" action = "192.168.0.17:5000/signup">
-        <div class="form-group" style="margin-bottom: 20px;">
-            <p style="margin-bottom:5px;">아이디</p>
-            <input type="text" class="form-control form-control-lg" id="userid" >
+    <div id=signup1>
+        <nav class="navbar navbar-light" style="color:#f1f1f1;" >
+            <a class="navbar-brand" href="#" style="color: #7ED321; ">Meari</a>
+            <i class="fas fa-bars" style="color: #7ED321"></i>
+        </nav>
+        <div>
+            <p class="Greet">안녕하세요.</p> 
+            <p class="Greet-disc">소비자 맞춤형<br/>의료 처방전<br/> 메아리 입니다.</p>
         </div>
-        <div class="form-group" style="margin-bottom: 20px;">
-            <p style="margin-bottom:5px;">비밀번호</p>
-            <input type="password" class="form-control form-control-lg" id="userpw">
-        </div>
-        <div class="form-group">
-            <p style="margin-bottom:5px;">비밀번호 확인</p>
-            <input type="password" class="form-control form-control-lg" id="userpwconfirm">
-        </div>
-    
+        <form class="Log-form" method="post" action="http://localhost:5000/signup">
+            <div class="form-group" style="margin-bottom: 20px;">
+                <p style="margin-bottom:5px;">아이디</p>
+                <input type="text" class="form-control form-control-lg" name="user_id" >
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <p style="margin-bottom:5px;">비밀번호</p>
+                <input type="password" class="form-control form-control-lg" name="user_pw">
+            </div>
+            <div class="form-group">
+                <p style="margin-bottom:5px;">비밀번호 확인</p>
+                <input type="password" class="form-control form-control-lg" name="user_pwconfirm">
+            </div>
+        
     
         <footer class="Bot-box">
             <div align="center">
-                <button type="submit" class="Bot-button" href="#">Next!</button>
+                <a id="change" class="Bot-button" >Next!</a>
             </div>
         </footer>
-    </form>
+    </div>
+    <div id=signup2>
+        <nav class="navbar navbar-light" style="color:#f1f1f1;" >
+            <a class="navbar-brand" href="#" style="color: #7ED321; ">Meari</a>
+            <i class="fas fa-bars" style="color: #7ED321"></i>
+        </nav>
+        <div align="center" style="margin-top: 30px;">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+        </div>
+          <div class="form-group" style="margin-bottom: 20px;">
+              <p style="margin-bottom:5px;">이름</p>
+              <input type="text" class="form-control form-control-lg" name="username">
+          </div>
+          <div class="form-group" style="margin-bottom: 20px;">
+              <p style="margin-bottom:5px;">주민 번호</p>
+              <input type="number" class="form-control form-control-lg" name="user_reginum" placeholder="●●●●●● - ●●●●●●●">
+          </div>
+          <div class="form-group">
+              <p style="margin-bottom:5px;">전화 번호</p>
+              <input type="number" class="form-control form-control-lg" name="phonenum">
+          </div>
+    
+          <p style="margin-bottom:5px;">이메일</p>
+          <div class="form-row align-items-center">
+            <div class="col-5">
+              <input type="text" class="form-control  form-control-lg mb-2" name="emailfirst">
+            </div>
+            <div class="col-7">
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control  form-control-lg" name="emailsecond">
+              </div>
+            </div>
+          </div>
+    
+    
+        
+        <footer class="Bot-box">
+            <div align="center">
+                <button type="submit" class="Bot-button" href="#">submit</button>
+            </div>
+        </footer>
+        </form>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="signup.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 </body>
