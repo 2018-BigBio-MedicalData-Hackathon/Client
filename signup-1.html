@@ -17,26 +17,27 @@
         <p class="Greet">안녕하세요.</p> 
         <p class="Greet-disc">소비자 맞춤형<br/>의료 처방전<br/> 메아리 입니다.</p>
     </div>
-    <form class="Log-form">
+    <form class="Log-form" action = "192.168.0.17:5000/signup">
         <div class="form-group" style="margin-bottom: 20px;">
             <p style="margin-bottom:5px;">아이디</p>
-            <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" >
+            <input type="text" class="form-control form-control-lg" id="userid" >
         </div>
         <div class="form-group" style="margin-bottom: 20px;">
             <p style="margin-bottom:5px;">비밀번호</p>
-            <input type="password" class="form-control form-control-lg" id="password">
+            <input type="password" class="form-control form-control-lg" id="userpw">
         </div>
         <div class="form-group">
             <p style="margin-bottom:5px;">비밀번호 확인</p>
-            <input type="password" class="form-control form-control-lg" id="passwordConfirm">
+            <input type="password" class="form-control form-control-lg" id="userpwconfirm">
         </div>
-    </form>
     
-    <footer class="Bot-box">
-        <div align="center">
-            <button type="submit" class="Bot-button" href="#">Next!</button>
-        </div>
-    </footer>
+    
+        <footer class="Bot-box">
+            <div align="center">
+                <button type="submit" class="Bot-button" href="#">Next!</button>
+            </div>
+        </footer>
+    </form>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
