@@ -1,0 +1,32 @@
+body{
+    background-color: #f8f9fa !important;
+    font-family:'NotoSansCJKkr-Regular' !important;
+}
+.Greet{
+    font-size:25px;
+    margin: 30px 30px 0px 30px;
+}
+.Greet-disc{
+    font-size: 40px;
+    margin: 0px 30px 15px 30px;
+}
+.Log-form{
+    margin: 100px 20px;
+}
+.Log-button{
+    color: white;
+    margin-top: 10px;
+    font-size:18px;
+    font-weight: 700;
+    letter-spacing:15px;
+}
+
+
+
+.Bot-box{
+    position: fixed;
+    background-color: #7ED321;
+    width: 100%;
+    height: 50px;
+    bottom:0
+}
