@@ -1,10 +1,13 @@
+html{
+    
+}
 body{
-    background-color: #7ED321 !important;
-    background-image: url("bg.png") !important;
-    /* background-size: cover !important; */
-    /* margin-left:0; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    /* background-color: #7ED321 !important; */
+    background-image: url("./bg.png") ;
+    background-size: auto;
+    background-position-x:  57.8%;
+    
+    background-repeat: no-repeat; 
     font-family:'NotoSansCJKkr-Regular' !important;
     /* background-size: 300px 100px; */
 
