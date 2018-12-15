@@ -1,7 +1,13 @@
+html{
+    
+}
 body{
     /* background-color: #7ED321 !important; */
-    background-image: url("./bg.png") !important;
-    background-repeat: no-repeat;
+    background-image: url("./bg.png") ;
+    background-size: auto;
+    background-position-x:  60%;
+    
+    background-repeat: no-repeat; 
     font-family:'NotoSansCJKkr-Regular' !important;
 }
 .Greet-box{
