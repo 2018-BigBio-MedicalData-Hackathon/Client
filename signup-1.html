@@ -18,18 +18,18 @@
             <p class="Greet">안녕하세요.</p> 
             <p class="Greet-disc">소비자 맞춤형<br/>의료 처방전<br/> 메아리 입니다.</p>
         </div>
-        <form class="Log-form" method="post" action="http://localhost:5000/signup">
+        <!-- <form class="Log-form"  id="searchForm"> -->
             <div class="form-group" style="margin-bottom: 20px;">
                 <p style="margin-bottom:5px;">아이디</p>
-                <input type="text" class="form-control form-control-lg" name="user_id" >
+                <input id="user_id" type="text" class="form-control form-control-lg" name="user_id" >
             </div>
             <div class="form-group" style="margin-bottom: 20px;">
                 <p style="margin-bottom:5px;">비밀번호</p>
-                <input type="password" class="form-control form-control-lg" name="user_pw">
+                <input id="user_pw" type="password" class="form-control form-control-lg" name="user_pw">
             </div>
             <div class="form-group">
                 <p style="margin-bottom:5px;">비밀번호 확인</p>
-                <input type="password" class="form-control form-control-lg" name="user_pwconfirm">
+                <input id="user_pwconfirm" type="password" class="form-control form-control-lg" name="user_pwconfirm">
             </div>
         
     
@@ -49,28 +49,28 @@
         </div>
           <div class="form-group" style="margin-bottom: 20px;">
               <p style="margin-bottom:5px;">이름</p>
-              <input type="text" class="form-control form-control-lg" name="username">
+              <input id="username" type="text" class="form-control form-control-lg" name="username">
           </div>
           <div class="form-group" style="margin-bottom: 20px;">
               <p style="margin-bottom:5px;">주민 번호</p>
-              <input type="number" class="form-control form-control-lg" name="user_reginum" placeholder="●●●●●● - ●●●●●●●">
+              <input id="user_reginum" type="number" class="form-control form-control-lg" name="user_reginum" placeholder="●●●●●● - ●●●●●●●">
           </div>
           <div class="form-group">
               <p style="margin-bottom:5px;">전화 번호</p>
-              <input type="number" class="form-control form-control-lg" name="phonenum">
+              <input id="phonenum" type="number" class="form-control form-control-lg" name="phonenum">
           </div>
     
           <p style="margin-bottom:5px;">이메일</p>
           <div class="form-row align-items-center">
             <div class="col-5">
-              <input type="text" class="form-control  form-control-lg mb-2" name="emailfirst">
+              <input id="emailfirst" type="text" class="form-control  form-control-lg mb-2" name="emailfirst">
             </div>
             <div class="col-7">
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
                   <div class="input-group-text">@</div>
                 </div>
-                <input type="text" class="form-control  form-control-lg" name="emailsecond">
+                <input id="emailsecond" type="text" class="form-control  form-control-lg" name="emailsecond">
               </div>
             </div>
           </div>
@@ -79,12 +79,15 @@
         
         <footer class="Bot-box">
             <div align="center">
-                <button type="submit" class="Bot-button" href="#">submit</button>
+                <button id="subsignup" type="submit" class="Bot-button" >submit</button>
             </div>
         </footer>
-        </form>
+        <!-- </form> -->
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="signup.js"></script>
