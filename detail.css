@@ -1,0 +1,16 @@
+body{
+    background-color: #f8f9fa !important;
+    font-family:'NotoSansCJKkr-Regular' !important;
+}
+.maintitle{
+    font-weight: bold; 
+    margin: 20px auto;
+}
+.subtitle{
+    font-weight: bold;
+}
+.backimg{
+    z-index: -1; 
+    position:relative;
+
+}
